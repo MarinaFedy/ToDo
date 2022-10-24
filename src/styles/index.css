@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;    
+    justify-content: center;
+}
+
+.App{
+    width: 800px;
+}
+
+.note, .doneNote{
+    display: flex;
+    padding: 15px;
+    border: 3px solid rgb(35, 166, 122);
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.note-enter {
+    transform: translateX(-350px);
+  }
+  .note-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+  }
+  .note-exit {
+    opacity: 1;
+  }
+  .note-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+  }
